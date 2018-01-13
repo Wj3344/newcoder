@@ -17,12 +17,8 @@ public class Solution {
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
         Queue<Integer> queue = new LinkedList<Integer>();
         while (pHead != null) {
-            int num = pHead.val;
-            int value = 1;
-            if (map.get(num) != null) {
-                value += map.get(num);
-            }
-            map.put(num, value);
+            
+            
             queue.add(num);
             pHead = pHead.next;
         }
