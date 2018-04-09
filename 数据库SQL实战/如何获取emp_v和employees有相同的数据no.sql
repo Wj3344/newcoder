@@ -1,0 +1,1 @@
+select * from employees where emp_no in (select emp_no from emp_v);
