@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNext()){
+            String a = sc.next();
+            String b = sc.next();
+            long sum = 0;
+            for(int i = 0;i < a.length();i++){
+                for(int j = 0;j < b.length();j++){
+                    int t = (a.charAt(i) - '0') * (b.charAt(j) - '0');
+                    sum += t;
+                }
+            }
+            System.out.println(sum);
+        }
+    }
+}

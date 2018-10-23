@@ -17,4 +17,18 @@ public class Solution {
         }
         return num;
     }
+
+    /**
+     * 改进算法，降低时间复杂度，空间占用
+     * @param  n [description]
+     * @return   [description]
+     */
+    public int NumberOf1_version2(int n) {
+        int count = 0;
+        while (n != 0) {
+            count++;
+            n = (n - 1) & n;
+        }
+        return count;
+    }
 }
